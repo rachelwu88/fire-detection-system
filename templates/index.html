@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection System</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            /* background-color: #fdb9b9; */
+            background: url('/static/firefighter.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container{
+            text-align: center;
+        }
+        h1 {
+            color: #000000;
+            font-size: 2.5em;
+            background-color: white;
+        }
+        #video-feed {
+            margin: 20px auto;
+            border: 2px solid #000;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+
+        button{
+            background-color: #ac4059;
+            color: white;
+            border-radius: 30px;
+            padding: 10px;
+            margin-left: 40px;
+        }
+        button:hover{
+            background-color: #c08391;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fire Detection System</h1>
+    </div>
+    
+    <div>
+        <img id="video-feed" src="/video_feed" width="640" height="480" alt="Video Feed">
+    </div>
+</body>
+</html>
